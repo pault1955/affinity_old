@@ -3,6 +3,8 @@
 // ======================================
 
 .slice_affinity_form {
+  margin-top: 30px;
+  margin-bottom: 30px;
 
   .info_header {
 
@@ -13,7 +15,7 @@
       color: $info_header_title-color;
       font-size: $info_header_title-font-size;
       font-family: $info_header_title-font-family;
-      line-height: 48px;
+      line-height: $info_header_title-font-size * 1;
     }
     .info_header_text {
       color: $info_header_text-color;
@@ -72,10 +74,14 @@
 
   @media (min-width: $breakpoint-sm) {
 
+    margin-top: 60px;
+    margin-bottom: 60px;
+
     .info_header {
 
       .info_header_title {
-        font-size: $info_header_title-font-size * 1.6;
+        font-size: $info_header_title-font-size * 2;
+        line-height: $info_header_title-font-size * 2;
       }
       .info_header_text {
         margin-bottom: 35px;

@@ -32,8 +32,8 @@ $nav_link-font-size: 18px;
 $nav_link-font-weight: normal;
 $nav_link_home-background-color:#5ac5c5;
 $nav_link-background-color: #f9f9f9;
-$nav_link-background-color--hover: #f9f9f9;
-$nav_link_top-margin-top: 5px;
+$nav_link-background-color--hover: transparent;
+$nav_link_top-margin-top: 4px;
 $nav_link_home-margin-top: 0;
 
 $nav_dropdown_link-font-size: 17px;
@@ -65,6 +65,12 @@ $slicknav-toplink-color--open: #000;
 // ======================================
 //  affinity banner slideshow
 // ======================================
+$banner_slideshow-background-color: #fff;
+$banner_slideshow_pager-background-color: #d1d2d4;
+$banner_slideshow_pager-background-color--active: #5ac5c5;
+$banner_slideshow_pager-width-height: 16px;
+$banner_slideshow_control-background-color: #bde8e8;
+
 
 //  slides
 // ======================================
@@ -120,6 +126,7 @@ $info_cards_button-color--hover: #fff;
 //  info header
 // ===================================
 
+
 //  form
 // ===================================
 
@@ -132,3 +139,124 @@ $form_buttom-background-color: #5ac5c5;
 $form_button-border--hover: 1px solid #5ac5c5;
 $form_button-background-color--hover: #5ac5c5;
 $form_button-color--hover: #fff;
+
+// ======================================
+//  affinity latest news
+// ======================================
+
+$latest_news-background-color: #4d4d4d;
+
+//  info header
+// ===================================
+
+$info_header_reverse_title-color: #fff;
+$info_header_reverse_title-font-size: 25px;
+$info_header_reverse_title-font-family: "Open Sans", sans-serif;
+
+$info_header_reverse_text-color: #fff;
+$info_header_reverse_text-font-size: 18px;
+$info_header_reverse_text-font-family: "Open Sans", sans-serif;
+
+//  news articles
+// ===================================
+
+$news_cards_articleListTitle-color: #4d4d4d;
+$news_cards_articleListTitle-font-size: 20px;
+$news_cards_articleListTitle-font-family: "Open Sans", sans-serif;
+$news_cards_articleListTitle-background-color: #fff;
+
+$news_cards_articleListDate-color: #4d4d4d;
+$news_cards_articleListDate-font-size: 14px;
+$news_cards_articleListDate-font-family: "Open Sans", sans-serif;
+$news_cards_articleListDate-background-color: #fff;
+
+$news_cards_articleListSummary-color: #4d4d4d;
+$news_cards_articleListSummary-font-size: 16px;
+$news_cards_articleListSummary-font-family: "Open Sans", sans-serif;
+$news_cards_articleListSummary-background-color: #fff;
+
+$news_cards_articleListLink-color: #4d4d4d;
+$news_cards_articleListLink-font-size: 14px;
+$news_cards_articleListLink-font-family: "Open Sans", sans-serif;
+$news_cards_articleListLink-padding: 5px 10px;
+$news_cards_articleListLink-background-color: #fff;
+$news_cards_articleListLink-border-top: 1px solid #ededed;
+
+$news_cards_button-border: #d1d2d4;
+$news_cards_button-color: #eff0f2;
+$news_cards_button-background-color: transparent;
+$news_cards_button-color--hover: #fff;
+$news_cards_button-border--hover: #5ac5c5;
+$news_cards_button-background-color--hover: #5ac5c5;
+
+// ======================================
+//  affinity Mini Slideshow
+// ======================================
+
+$mini_slideshow-background-color: #fff;
+
+//  info header
+// ===================================
+
+//  Mini Slideshow
+// ===================================
+
+$mini_slideshow_pager-background-color: #d1d2d4;
+$mini_slideshow_pager-background-color--active: #5ac5c5;
+$mini_slideshow_pager-width-height: 16px;
+$mini_slideshow_control-background-color: #fff;
+
+$mini_slideshow_button-background-color: #fff;
+$mini_slideshow_button-border: 1px solid #d1d2d4;
+$mini_slideshow_button-color: #4d4d4d;
+$mini_slideshow_button-font-size: 14px;
+
+$mini_slideshow_button-border--hover: 1px solid #5ac5c5;
+$mini_slideshow_button-background-color--hover: #5ac5c5;
+$mini_slideshow_button-color--hover: #fff;
+
+// ======================================
+//  affinity recent media
+// ======================================
+
+$recent_media-background-color: #eff0f2;
+
+//  info header
+// ===================================
+
+//  media items
+// ===================================
+
+$media_cards_mediaListTitle-color: #4d4d4d;
+$media_cards_mediaListTitle-font-size: 20px;
+$media_cards_mediaListTitle-font-family: "Open Sans", sans-serif;
+$media_cards_mediaListTitle-background-color: #fff;
+
+$media_cards_mediaListDesc-color: #4d4d4d;
+$media_cards_mediaListDesc-font-size: 16px;
+$media_cards_mediaListDesc-font-family: "Open Sans", sans-serif;
+$media_cards_mediaListDesc-background-color: #fff;
+
+$media_cards_mediaListLink-color: #4d4d4d;
+$media_cards_mediaListLink-font-size: 14px;
+$media_cards_mediaListLink-font-family: "Open Sans", sans-serif;
+$media_cards_mediaListLink-padding: 5px 10px;
+$media_cards_mediaListLink-background-color: #fff;
+$media_cards_mediaListLink-border-top: 1px solid #ededed;
+
+$media_cards_button-border: #d1d2d4;
+$media_cards_button-color: #4d4d4d;
+$media_cards_button-background-color: transparent;
+$media_cards_button-color--hover: #fff;
+$media_cards_button-border--hover: #5ac5c5;
+$media_cards_button-background-color--hover: #5ac5c5;
+
+// ======================================
+//  affinity Text with Background Image
+// ======================================
+
+$text_image-background-image: #fff;
+
+//  info header
+// ===================================
+

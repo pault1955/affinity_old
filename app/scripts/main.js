@@ -41,18 +41,54 @@ $(document).ready(function () {
         $(caption).insertAfter( this );
     });
 
-    $('.slice_affinity_4_al .info_cards .articleListSummary').each(function () {
-        var articleListLink = $(this).parent().find('.articleListImage a').attr('href');
-        var summaryText = $(this).find('span').text().split('*');
-        $(this).text(summaryText[0]);
-        var buttonText = summaryText[1];
-        var button = '<div class="info_cards_button_wrapper"> <a class="info_cards_button" href="' + articleListLink + '">' + buttonText + '</a></div>';
-        $(button).insertAfter(this);
-    });
-
     $('.slice_affinity_4_al .info_cards > div').addClass('col-md-3 col-sm-6 col-xs-12');
 
-  /* remove sub menus from Home   */
+
+    // slice_affinity_latest_news
+
+    $('.slice_affinity_latest_news .news_cards > div').addClass('col-md-4  col-xs-8 center-block');
+
+
+    $('.slice_affinity_latest_news .articleListTitle a').each(function (index) {
+        var titleLink = $(this).attr("href");
+        $(this).parent().parent().find('.articleListLink').wrapInner('<a  href="' + titleLink + '">');
+    });
+
+    $('.slice_affinity_latest_news .articleListImage img').each(function (index) {
+        var imagePath = $(this).attr('src');
+        $(this).attr('src', imagePath.replace("/Publisher/GetResizedImage.aspx?w=380&h=156&url=/", "/"));
+    });
+
+
+    // mini-slideshow slice
+
+    $('.miniSlides .gallery_ul').show().bxSlider({
+        mode: 'fade',
+        auto: true,
+        pause: 8000,
+        speed: 500,
+        pager: true,
+        controls: true,
+        preloadImages: 'all'
+    });
+
+
+    // slice_affinity_recent_media
+
+    $('.slice_affinity_recent_media .media_cards > span > div').addClass('col-md-4  col-xs-8 center-block');
+
+    $('.slice_affinity_recent_media .mediaListTitle a').each(function (index) {
+        var titleLink = $(this).attr("href");
+        $(this).parent().parent().find('.mediaListLink').wrapInner('<a  href="' + titleLink + '">');
+    });
+
+    $('.slice_affinity_recent_media .mediaListImage img').each(function (index) {
+        var imagePath = $(this).attr('src');
+        $(this).attr('src', imagePath.replace("/Publisher/GetResizedImage.aspx?w=380&h=156&url=/", "/"));
+    });
+
+
+    /* remove sub menus from Home   */
 
     $('ul.root_menu > li.has_sub_menu:first-child > ul.sub_menu').remove();
 
